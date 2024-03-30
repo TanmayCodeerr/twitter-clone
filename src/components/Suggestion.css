@@ -1,0 +1,256 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+/* .the-header{
+    position: fixed;
+    right: 0;
+    top: 0;
+} */
+/* .main-sidebar-div{
+    background-color: gray;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    margin: 10px;
+} */
+.main-sidebar-div::-webkit-scrollbar{
+    width: 8px;
+}
+.main-sidebar-div::-webkit-scrollbar-thumb{
+    background-color: rgb(102, 102, 102);
+    border-radius: 10px;
+}
+.main-sidebar-div::-webkit-scrollbar-button{
+    visibility: none;
+}
+.main-sidebar-div {
+    /* width: 350px;
+    height: auto;  */
+    background-color: white; 
+    /* margin: 1rem; */
+    /* border-radius: 20px;
+    padding: 15px;
+    position: fixed; */
+    overflow: auto;
+    z-index: 1;
+}
+  
+  /* Positioning the rectangle */
+.main-sidebar-div.right {
+    right: 1rem;
+    top: 1rem;
+    bottom: 1rem;
+}
+.sidebar-heading{
+    color: gray;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+.sidebar-div-1{
+    background-color: rgb(230, 230, 230);
+    height: auto;
+    padding: 30px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+.suggestion-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.suggestions div span{
+    font-size: 14px;
+}
+
+.suggestions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.suggestion-icon{
+    font-size: 40px;
+    margin-right: 10px;
+}
+.suggestion-tabs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+.follow-button{
+    background-color: rgb(41, 176, 255);
+    padding: 8px 10px 8px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.follow-button:hover{
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+.suggestion-settings{
+    color: black;
+    border: 2px solid gray;
+    padding: 6px 8px 6px 8px;
+    border-radius: 200px;
+    cursor: pointer;
+}
+.show-more{
+    background-color: rgb(204, 204, 204);
+    padding: 10px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: rgb(41, 41, 41);
+}
+.show-more:hover{
+    color: white;
+    background-color: rgb(41, 41, 41);
+    transition: 0.3s ease;
+}
+.suggestion-tab{
+    margin-bottom: 10px;
+}
+.sidebar-div-2{
+    /* background-color: rgb(105, 105, 105); */
+    background-image: url('../assets/messi.jpg');
+    background-position: center;
+    background-size: cover;
+    /* height: 140px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    border-radius: 30px;
+    padding: 20px 10px 10px 10px;
+    margin-bottom: 20px;
+}
+.sidebar-div-2-header{
+    margin-left: 10px;
+}
+.hashtag-metrics{
+    opacity: 0.5;
+}
+.sidebar-div-2-post{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(238, 238, 238, 0.3), rgba(140, 140, 140, 0.8));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 5px 10px 5px 20px;
+    border-radius: 50px;
+}
+.post-div-2{
+    background-color: rgb(41, 176, 255);
+    width: 50px;
+    height: 50px;
+    margin-right: 0;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 30px 8px rgb(36, 153, 220);
+    cursor: pointer;
+}
+.post-div-2:hover{
+    background-color: rgb(30, 128, 184);
+    transition: 0.2s ease-in-out;
+}
+.post-icon-2{
+    color: white;
+    font-size: 25px;
+}
+.sidebar-div-3{
+    padding: 20px;
+    border-radius: 20px;
+    background-image: url('../assets/circle-bg-2.jpg');
+    background-position: center;
+    background-size: cover;
+    color: black;
+}
+.sidebar-div-3 a{
+    text-decoration: none;
+}
+.check-it-out{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+}
+.post-placeholder{
+    opacity: 0.8;
+}
+/*///////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////*/
+.suggestion-icon.first{
+    color: rgb(255, 93, 84);
+}
+.suggestion-icon.second{
+    color: rgb(212, 77, 70);
+}
+.suggestion-icon.third{
+    color: rgb(146, 52, 47);
+}
+/*///////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////*/
+.black-headings{
+    color: black;
+}
+/*///////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////*/
+.gray-headings{
+    color: gray;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .main-sidebar-div{
+        width: auto;
+        height: 300px;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 20px;
+    }
+}
+
+@media only screen and (max-width: 1260px) and (min-width: 600px) {
+
+    .main-sidebar-div{
+        width: auto;
+        padding: 10px;
+        /* margin: 10px; */
+        border-radius: 20px;
+        margin-left: 200px;
+        margin-right: 40px;
+        margin-bottom: 100px;
+        height: 350px;
+        border-radius: 30px;
+    }
+}
+
+@media only screen and (min-width: 1260px) {
+
+    .main-sidebar-div{
+        width: 350px;
+        height: auto; 
+        /*d32d23d23d23d23d23d23d23d2d23d*/
+        border-radius: 20px;
+        padding: 15px;
+        position: fixed;
+    }
+}
