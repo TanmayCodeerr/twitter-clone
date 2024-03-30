@@ -1,0 +1,180 @@
+.content-divvvv{
+    /* background-image: url('../assets/bg-image.png');  */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* border-radius: 50px;
+    padding: 20px;
+    margin-left: 280px;
+    margin-right: 400px;
+    margin-bottom: 100px; */
+    position: relative;
+    width: auto;
+    /* height: 350px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Align items to the bottom */
+}
+
+.content-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.the-svg{
+    color: rgb(230, 82, 171);
+}
+.content-text span{
+    text-shadow: 0px 0px 6px black;
+}
+.details{
+    /* background-color: gray; */
+    background: linear-gradient(135deg, rgba(140, 140, 140, 0.8), rgba(140, 140, 140, 0.2));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    overflow: hidden;
+}
+.details-2{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.details-2 div ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 0px;
+}
+.detail-metrics li{
+    /* background-color: gray; */
+    background: linear-gradient(135deg, rgba(30, 30, 30, 0.5), rgba(30, 30, 30, 0.1));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+.share-btn{
+    background: linear-gradient(135deg, rgba(30, 30, 30, 0.5), rgba(30, 30, 30, 0.5));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 5px 8px 5px 8px;
+    border-radius: 1000px;
+}
+/* .detail-metrics li svg{
+    margin-right: 10px;
+} */
+
+@media only screen and (max-width: 600px) {
+    .main-content-div{
+        margin-top: 150px;
+    }
+    .content-divvvv{
+        /* width: 280px;
+        height: 300px;
+        padding: 10px;
+        border-radius: 20px;
+        margin-bottom: 50px; */
+        height: 300px;
+        padding: 10px;
+        border-radius: 20px;
+        margin: 10px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    .content-header{
+        width: 170px;
+    }
+    .the-svg{
+        font-size: 40px;
+    }
+    .details{
+        display: none;
+    }
+    .details-2 div ul{
+        width: 220px;
+    }
+    .detail-metrics li{
+        padding: 15px 10px 15px 10px;
+    }
+    .detail-metrics li svg{
+        margin-right: 5px;
+    }
+}
+
+@media only screen and (min-width: 1260px) {
+
+    .main-content-div{
+        margin-right: 200px;
+        margin-top: 200px;
+    }
+    .content-divvvv{
+        /* margin-bottom: 50px;
+        width: 660px;
+        height: 310px;
+        border-radius: 30px;
+        padding: 20px; */
+        border-radius: 50px;
+        padding: 20px;
+        margin-left: 200px;
+        margin-right: 450px;
+        margin-bottom: 100px;
+        height: 350px;
+    }
+    .content-header{
+        width: 180px;
+    }
+    .the-svg{
+        font-size: 50px;
+    }
+    .details{
+        padding: 20px;
+    }
+    .details-2 div ul{
+        width: 480px;
+    }
+    .detail-metrics li{
+        padding: 15px 50px 15px 50px;
+    }
+    .detail-metrics li svg{
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 1260px) and (min-width: 600px) {
+    .content-divvvv{
+        padding: 25px;
+        border-radius: 50px;
+        margin-left: 200px;
+        margin-right: 40px;
+        margin-bottom: 100px;
+        height: 350px;
+        border-radius: 30px;
+    }
+    .details-2 div ul{
+        width: 310px;
+    }
+    .detail-metrics li{
+        padding: 15px 20px 15px 20px;
+    }
+    .content-header{
+        width: 180px;
+    }
+    .the-svg{
+        font-size: 50px;
+    }
+    .details{
+        padding: 20px;
+    }
+    .detail-metrics li svg{
+        margin-right: 10px;
+    }
+}
+
