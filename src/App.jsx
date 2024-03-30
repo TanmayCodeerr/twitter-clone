@@ -5,6 +5,8 @@ import Content from './components/Content'
 import Header from './components/Header'
 import Suggestion from './components/Suggestion'
 
+import { Analytics } from '@vercel/analytics/react'
+
 function App() {
 
   return (
@@ -14,6 +16,7 @@ function App() {
       <Header />
       <Navbar /> */}
       
+      <Analytics>
         <div className='daddy-div' >
           <Content />
           <Content />
@@ -26,7 +29,7 @@ function App() {
         </div>
         <Header />
         <Navbar />
-
+      </Analytics>
     </>
   )
 }
