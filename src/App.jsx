@@ -24,7 +24,7 @@ function App() {
           <Content />
           <Content />
           <div  className='info'>
-            <h1>made by tanmay</h1>
+            <h1>made by tanmay...</h1>
           </div>
         </div>
         <Header />
